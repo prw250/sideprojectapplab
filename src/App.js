@@ -38,7 +38,7 @@ function App() {
         <p>
           {promptItems[quote]}
         </p>
-        <textarea rows="4" cols="50">xyz</textarea>
+        <textarea rows="10" cols="55">Patricia:</textarea>
     </div>
 
   );

@@ -1,7 +1,7 @@
 .App {
   text-align: center;
+  Color: white;
 }
-
 .App-logo {
   height: 40vmin;
 }
@@ -22,5 +22,18 @@
 }
 
 textarea {
-  background: yellow;
+  background: white;
+}
+
+body {
+  background-image: linear-gradient(to right, orchid , pink, lightblue);
+}
+
+h1 {
+  color: rgb(65, 27, 126);
+}
+
+button {
+  color:rgb(65, 27, 126);
+  background-color: paleturquoise
 }

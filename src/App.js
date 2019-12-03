@@ -8,6 +8,7 @@ let promptItems= ["Write 5 things you are most grateful for today.", "What is so
 function App() {
   const [quote, setQuote] = useState();
   const [remainingtime, setRemainingtime] = useState(300);
+  const [buttonclicked, setButtonclicked] = useState(false);
   function randomquote(){
     console.log(Math.floor(Math.random() * 17));
     return(
@@ -15,15 +16,17 @@ function App() {
     )
   }
   useEffect(() => {
-    const id = setInterval(() => setRemainingtime(n => n - 1), 1000);
+    const id = setInterval(() => {
+      if (buttonclicked) setRemainingtime(n => n - 1)}, 1000);
     return () => clearInterval(id);
-  }, []);
+  }, [buttonclicked]);
 
   function handleclick() {
     let  fiveMinutes = 60 * 5,
     display = document.querySelector('#time');
 
    randomquote();
+   setButtonclicked(true);
   //  startTimer(fiveMinutes, display);
   }
 

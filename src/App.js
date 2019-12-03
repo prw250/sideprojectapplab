@@ -14,18 +14,10 @@ function App() {
       setQuote(Math.floor(Math.random() * 17))
     )
   }
- useEffect( 
-function startTimer(duration, display) {
-    var timer = duration;
-    setInterval(function () {
-      console.log(remainingtime)
-      setRemainingtime(remainingtime-1)
-        
-    }, 1000);
-
-    console.log(display);
-}
- )
+  useEffect(() => {
+    const id = setInterval(() => setRemainingtime(n => n - 1), 1000);
+    return () => clearInterval(id);
+  }, []);
 
   function handleclick() {
     let  fiveMinutes = 60 * 5,
@@ -39,12 +31,13 @@ function startTimer(duration, display) {
     <div className="App" >
         <h1>Guided Positivity Break</h1>
         <span id="time">{remainingtime}</span>
-        <button onClick={handleclick}>BEGIN</button>
+        <div><button onClick={handleclick}>BEGIN</button></div>
         <p>
           {promptItems[quote]}
         </p>
-        
+        <textarea rows="4" cols="50">xyz</textarea>
     </div>
+
   );
 }
 

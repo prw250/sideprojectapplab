@@ -9,9 +9,9 @@ function App() {
   const [quote, setQuote] = useState();
   const [remainingtime, setRemainingtime] = useState(300);
   function randomquote(){
-    console.log(Math.floor(Math.random() * 15));
+    console.log(Math.floor(Math.random() * 17));
     return(
-      setQuote(Math.floor(Math.random() * 15))
+      setQuote(Math.floor(Math.random() * 17))
     )
   }
  useEffect( 

@@ -62,12 +62,12 @@ Ref.on('value', function(snapshot) {
     <div className="App" >
         <h1>Guided Positivity Break</h1>
         <span id="time">{remainingtime}</span>
-        <div><button onClick={handleclick}>BEGIN</button></div>
+        <div><button className = 'button1' onClick={handleclick}>BEGIN</button></div>
         <p>
           {promptItems[quote]}
         </p>
         <textarea rows="10" cols="55" onChange={handleChange}>{message}</textarea>
-        <div><button onClick={handleSubmit}>SUBMIT</button></div>
+        <div><button className='button2'onClick={handleSubmit}>SUBMIT</button></div>
         {Object.keys(messages).map(k => {
           return <div>{messages[k]}</div>;
         })}

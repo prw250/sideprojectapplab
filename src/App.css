@@ -37,3 +37,8 @@ button {
   color:rgb(65, 27, 126);
   background-color: paleturquoise
 }
+
+span {
+  color: lightskyblue;
+  font-size:50px;
+}

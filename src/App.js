@@ -67,7 +67,7 @@ Ref.on('value', function(snapshot) {
           {promptItems[quote]}
         </p>
         <textarea rows="10" cols="55" onChange={handleChange}>{message}</textarea>
-        <button onClick={handleSubmit}>Submit</button>
+        <div><button onClick={handleSubmit}>SUBMIT</button></div>
         {Object.keys(messages).map(k => {
           return <div>{messages[k]}</div>;
         })}

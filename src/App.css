@@ -31,12 +31,15 @@ body {
 
 h1 {
   color: rgb(65, 27, 126);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
 }
 
 button {
   color:rgb(65, 27, 126);
   width: 100px;
-  font-size: 20px;
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
 }
 .button1{
   background-color: lightcyan;
@@ -45,6 +48,6 @@ button {
   background-color: lavender;
 }
 span {
-  color: rgb(135, 250, 145);
+  color:whitesmoke;
   font-size:50px;
 }

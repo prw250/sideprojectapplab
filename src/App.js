@@ -60,9 +60,15 @@ Ref.on('value', function(snapshot) {
 
   return (
     <div className="App" >
+        <style>
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+</style>
         <h1>Guided Positivity Break</h1>
         <span id="time">{remainingtime}</span>
-        <div><button className = 'button1' onClick={handleclick}>BEGIN</button></div>
+        <div><style>
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+</style>
+          <button className = 'button1' onClick={handleclick}>BEGIN</button></div>
         <p>
           {promptItems[quote]}
         </p>
